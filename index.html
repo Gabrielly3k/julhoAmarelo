@@ -1,0 +1,140 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JULHO AMARELO </title>
+
+    <style>
+
+        body{
+            background-image: url("https://www.paxbahia.com.br/images/bl/julho-amarelo-hepatites-virais.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1{
+
+            text-align: center;
+            font-size: 49px;
+            font-family: italic;
+        }
+
+        p{
+            text-align: center;
+            font-size: 30px;
+            font-family: sans-serif;
+            border-radius: 15px;
+            box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.4);
+            text-align: left;
+            margin-top: 90px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .barra {
+            background-color: black;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 105px;
+        }
+
+        
+        .button-container {
+            font-family: sans-serif;
+            font-size: 35px;
+            padding: 15px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centraliza verticalmente */
+            align-items: center; /* Centraliza horizontalmente */
+            height: 50vh; /* Altura da tela inteira */
+          
+                    
+        }
+        .button:hover {
+            background-color: darkgoldenrod;
+           
+        }
+        .hidden {
+            box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);
+            display: none;
+            font-size: 20px;
+        }
+        .button1{
+            font-size: italic;
+            font-size: 20px;
+            border-bottom: 2px;
+        }
+        
+        
+
+       
+
+    </style>
+
+</head>
+<body>
+
+<div class="barra"></div><br><br><br><br>
+
+
+<div class="inicio">
+
+    <h1 class="inicio"> O QUE JULHO AMARELO? </h1>
+        <p class="inicio">“Julho Amarelo” é uma campanha de extrema importância para a conscientização e combate às hepatites virais, 
+            doenças infecciosas que afetam o fígado e podem levar a graves complicações se não tratadas adequadamente.
+            As hepatites virais são causadas por diferentes tipos de vírus, sendo os mais comuns os vírus das hepatites A, B, C, D e E. Cada um desses tipos tem modos de transmissão, sintomas e tratamentos específicos.
+             Muitas vezes, as hepatites virais são assintomáticas, mas, quando os sintomas aparecem, podem incluir cansaço, febre, mal-estar, dores musculares, náuseas, vômitos, icterícia (pele e olhos amarelados), urina escura e fezes claras.
+        </p>
+
+</div>
+   
+
+
+
+<div class="objetivo">
+    <h1 class="objetivo">OBJETIVO</h1>
+    <p class="objetivo">O principal objetivo da campanha “Julho Amarelo” é alertar a população sobre os riscos das hepatites virais e promover ações de prevenção, diagnóstico precoce e tratamento adequado.
+             A conscientização promovida pelo “Julho Amarelo” é essencial para a prevenção dessas doenças.
+             Conhecer as formas de transmissão e adotar medidas preventivas, como a vacinação (disponível para hepatites A e B),
+              uso de preservativos nas relações sexuais, cuidado com materiais perfurocortantes e práticas de higiene adequadas, pode reduzir significativamente a incidência das hepatites virais.
+              A campanha também busca desmistificar preconceitos e estigmas associados a essa doença, incentivando as pessoas a realizarem os testes e seguirem o tratamento, quando necessário. O diagnóstico precoce é fundamental, pois muitas vezes a hepatite pode evoluir silenciosamente para formas crônicas, levando à cirrose e câncer de fígado.
+ 
+Portanto, o “Julho Amarelo” é uma campanha de grande relevância, que não apenas informa e educa a população sobre as hepatites virais, mas também promove a saúde e o bem-estar de todos.
+     </p><br>
+</div>
+
+<div class="button-container">
+    <button class="button" id="button1">PREVENÇÃO</button><BR>
+    <div class="hidden" id="text1">*Um mês para lembrar que a prevenção é a melhor cura.*</div>
+    <button class="button" id="button2">INFORMAÇÃO</button><BR>
+    <div class="hidden" id="text2">*A informação é a nossa maior arma contra as hepatites. Vamos espalhar a palavra neste Julho Amarelo.*</div>
+    <button class="button" id="button3">SAÚDE</button><BR>
+    <div class="hidden" id="text3">*lembre-se: o cuidado com a saúde começa com a prevenção.*</div>
+    <button class="button" id="button4">ESPERANÇA</button><BR>
+    <div class="hidden" id="text4">*Iluminamos a esperança e a conscientização sobre as hepatites virais.*</div>
+    <button class="button" id="button5">LEMBRETE</button><BR>
+    <div class="hidden" id="text5">*Um lembrete de que juntos podemos vencer as hepatites virais.*</div>
+</div>
+
+
+<script>
+    const buttons = document.querySelectorAll('.button');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const textId = button.id.replace('button', 'text');
+            const textElement = document.getElementById(textId);
+            textElement.classList.toggle('hidden');
+        });
+    });
+</script>
+
+
+</body>
+</html>
